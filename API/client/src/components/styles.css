@@ -1,0 +1,157 @@
+.pic{
+    height: 100%;
+    width:40%;
+} 
+body{
+    background-color: white ;
+}
+html, body, .App , #root{
+    height: 100%
+}
+.background{
+    height: 92.5%;
+    background: #e8f1f8;
+}
+.front {
+    position: absolute;
+    right: 0px;
+    /* z-index: -1;  */
+    opacity: 80%; 
+}
+.front0 {
+    position: absolute;
+    margin-left: 12%;
+    left: 0;
+    bottom: 0px;
+    z-index: -1; 
+    opacity: 65%; 
+}
+.front1 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1; 
+    opacity: 65%; 
+}
+.front2{
+    position: absolute;
+    left: 0;
+    margin-top: 7%;
+    z-index: -1; 
+    opacity: 65%; 
+}
+.front3 {
+    position: absolute;
+    margin-left: 5%;
+    left: 0;
+    bottom: 0px;
+    z-index: -1; 
+    opacity: 75%; 
+}
+.head-side{
+    position: absolute;
+    left: 7%;
+    top: 30%;
+}
+.head-side h1{
+    font-size: 3.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-side{
+    position: absolute;
+    left: 13%;
+    top: 60%;
+}
+
+.card-header{
+    position: relative;
+}
+.card-body{
+    text-align: left;
+    line-height: 110%;
+}
+.card-footer.card-custom{
+    background-color:white;
+}
+.side{
+    position:absolute;
+    right: 0%;
+    bottom: 0%;
+}
+.card{
+    margin-top: 10%;
+    width: 90%!important;
+}
+.container{
+    position: relative;
+}
+.bg-transparent{
+    border-right: none!important;
+    color:rgba(0,0,0,0.5)!important;
+    margin-left: 2%!important;
+}
+.abc{
+    border-left: none!important;
+    max-width: 40%!important;
+    min-width: 40%!important;
+}
+.input-group{
+    margin-bottom: 1.8%;
+}
+form{
+    margin-left: 30%;
+}
+.button-align{
+    margin-right: 40%!important;
+    padding-left: 2%!important;
+    padding-right: 2%!important;
+    padding-top: 1%!important;
+    padding-bottom: 1%!important;
+}
+.fa-users{
+    opacity: 30%;
+}
+a{
+    text-decoration: none!important;
+}
+.picture{
+    height:20vh;
+    margin-left: 5%;
+}
+.div-align{
+    margin-left: 40%;
+    display: block;
+    text-align: left;
+}
+.original{
+    margin-left: 0!important;
+}
+.tablew{
+    width: 38%!important;
+    margin-left: 31%!important; 
+    margin-top: 2%!important;
+    margin-bottom: 2%!important;
+}
+.fa-check-circle{
+    color: rgb(62, 173, 62);
+}
+.line{
+    width: 30%;
+    margin-left: 35%;
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 2% !important;
+    margin-top: 1% !important;
+}
+.navbar{
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+.head{
+    color:white !important;
+    margin-left:10px;
+    padding:0;
+    margin-bottom:0
+}
+
