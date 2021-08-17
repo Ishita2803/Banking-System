@@ -42,7 +42,7 @@ export class edit extends Component {
 
     handleSubmit=async(event)=>{
         event.preventDefault()
-        await axios.put(`/users/`+ this.props.match.params.userID,
+        axios.put(`/users/`+ this.props.match.params.userID,
         {
             name:this.state.name,
             email:this.state.email,
@@ -50,7 +50,7 @@ export class edit extends Component {
             password:this.state.password,
             balance:this.state.balance,
         })
-        .then(await (this.props.history.push('/viewAll')))
+        .then(await this.props.history.push('/viewAll'))
     }
 
     render() {
