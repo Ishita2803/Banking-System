@@ -1,7 +1,6 @@
 .pic{
     height: 100%;
     width:40%;
-    opacity: 30%;
 } 
 body{
     background-color: white ;
@@ -17,7 +16,7 @@ html, body, .App , #root{
     position: absolute;
     right: 0px;
     /* z-index: -1;  */
-    opacity: 80%; 
+    opacity: 0.8; 
 }
 .front0 {
     position: absolute;
@@ -25,21 +24,21 @@ html, body, .App , #root{
     left: 0;
     bottom: 0px;
     z-index: -1; 
-    opacity: 65%; 
+    opacity: 0.65; 
 }
 .front1 {
     position: absolute;
     right: 0px;
     bottom: 0px;
     z-index: -1; 
-    opacity: 65%; 
+    opacity: 0.65; 
 }
 .front2{
     position: absolute;
     left: 0;
     margin-top: 7%;
     z-index: -1; 
-    opacity: 65%; 
+    opacity: 0.65; 
 }
 .front3 {
     position: absolute;
@@ -47,7 +46,7 @@ html, body, .App , #root{
     left: 0;
     bottom: 0px;
     z-index: -1; 
-    opacity: 75%; 
+    opacity: 0.75; 
 }
 .head-side{
     position: absolute;
@@ -110,7 +109,7 @@ form{
     padding-bottom: 1%!important;
 }
 .fa-users{
-    opacity: 30%;
+    opacity: 0.30;
 }
 a{
     text-decoration: none!important;
