@@ -17,12 +17,12 @@ export class transfer extends Component {
         }
     }
     componentDidMount(){
-        axios.get(`http://localhost:9000/users`)
+        axios.get(`/users`)
         .then(res=>{
             const users=res.data
             this.setState({users})
         })
-        axios.get(`http://localhost:9000/users/`+ this.props.match.params.userID)
+        axios.get(`/users/`+ this.props.match.params.userID)
         .then(res=>{
             const users=res.data;
             this.setState({
@@ -31,7 +31,7 @@ export class transfer extends Component {
         })
     }
     getOne(userID){
-        axios.get(`http://localhost:9000/users/`+ userID)
+        axios.get(`/users/`+ userID)
         .then(res=>{
             const users=res.data;
             this.setState({
@@ -60,11 +60,11 @@ export class transfer extends Component {
                 balance1:parseInt(this.state.balance1)-parseInt(this.state.amount),
                 balance2:parseInt(this.state.balance2)+parseInt(this.state.amount),
             })
-            await axios.put(`http://localhost:9000/user/`+ this.props.match.params.userID,
+            await axios.put(`/user/`+ this.props.match.params.userID,
             {
                 balance:this.state.balance1,
             }).then(
-                await axios.put(`http://localhost:9000/user/`+ this.state.user2,
+                await axios.put(`/user/`+ this.state.user2,
                 {
                     balance:this.state.balance2,
                 })

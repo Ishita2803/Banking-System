@@ -19,7 +19,7 @@ export class edit extends Component {
         }
     }
     componentWillMount(){
-        axios.get(`http://localhost:9000/users/`+ this.props.match.params.userID)
+        axios.get(`/users/`+ this.props.match.params.userID)
         .then(res=>{
             const users=res.data;
             console.log(users);

@@ -20,7 +20,7 @@ export class invoice extends Component {
         }
     }
     componentWillMount(){
-        axios.get(`http://localhost:9000/users/`+ this.state.id1)
+        axios.get(`/users/`+ this.state.id1)
         .then(res=>{
             const user1=res.data;
             console.log(user1);
@@ -28,7 +28,7 @@ export class invoice extends Component {
                 user1
             })
         })
-        axios.get(`http://localhost:9000/users/`+ this.state.id2)
+        axios.get(`/users/`+ this.state.id2)
         .then(res=>{
             const user2=res.data;
             console.log(user2);
