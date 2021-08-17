@@ -42,7 +42,7 @@ export class edit extends Component {
 
     handleSubmit=async(event)=>{
         event.preventDefault()
-        await axios.put(`http://localhost:9000/users/`+ this.props.match.params.userID,
+        await axios.put(`/users/`+ this.props.match.params.userID,
         {
             name:this.state.name,
             email:this.state.email,
