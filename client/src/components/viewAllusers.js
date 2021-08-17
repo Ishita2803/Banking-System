@@ -13,9 +13,15 @@ export class viewAllusers extends Component {
             users:[]
         }
     }
-
+    componentDidUpdate(){
+        axios.get(`/users/`)
+        .then(res=>{
+            const users=res.data
+            this.setState({users})
+        })
+    }
     componentWillMount(){
-        axios.get(`users`)
+        axios.get(`/users/`)
         .then(res=>{
             const users=res.data
             this.setState({users})
