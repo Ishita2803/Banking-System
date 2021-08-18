@@ -40,9 +40,9 @@ export class viewAllusers extends Component {
     
     render() {
         return (
-            <div className='row'>
+            <div className='center row'>
                     {this.state.users.map(user=>
-                        <div className='col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12' key={user._id}>
+                        <div className='xyx col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12' key={user._id}>
                             <div className='card'>
                             <div className='card-header'>
                                 <img className="pic" src={photo}></img>

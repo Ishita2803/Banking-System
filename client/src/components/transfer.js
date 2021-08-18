@@ -80,7 +80,7 @@ export class transfer extends Component {
             <div>
                 <br></br>
                 <h4><b>Select the account to transfer money</b></h4>
-                <form className="original" onSubmit={this.handleSubmit}>
+                <form className="center" onSubmit={this.handleSubmit} style={{flexDirection:"column"}}>
                     <table className="table table-bordered table-striped tablew" >
                         <thead>
                             <tr>

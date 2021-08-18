@@ -41,6 +41,7 @@ export class viewOne extends Component {
         return (
             <div >
                 <br></br>
+                <div className='center'>
                 <div className='div-align'>
                 <img className="picture" src={photo} ></img><br/><br/>
                 <p><b>Account no.</b> : {this.state.users.account}</p>
@@ -51,6 +52,7 @@ export class viewOne extends Component {
                 <p><b>Balance</b> : &#8377;{this.state.users.balance}</p>
                 <p>Created on <b>{time.substring(3,15)}</b> at <b>{time.substring(15,25)}</b></p>
                 {message}
+                </div>
                 </div>
                 <br></br>
                 <button className='btn btn-success' onClick={()=>this.handleTransfer(this.state.userId)} style={{marginRight:"3%"}}>Transfer money</button>

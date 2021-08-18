@@ -56,12 +56,14 @@ export class edit extends Component {
     render() {
         const time=this.state.createdAt;
         return (
-            <div>
-            <div className='form-align'>
+            <div className='center'>
+            <div >
+                <br></br>
                 <br></br>
                 <p>Your bank account with account no. {this.state.account} was created on {String(time).split("T",1)} at {String(time).substring(11,20)} </p>
                 <br></br>
                 <form onSubmit={this.handleSubmit}>
+                <div className='center1'>
                     <div className="input-group">
                         <label >Name : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span className='input-group-text bg-transparent '><i class="fa fa-user fa-lg"></i></span>
@@ -87,12 +89,14 @@ export class edit extends Component {
                         <span className='input-group-text bg-transparent '><i class="fa fa-money fa-lg"></i></span>
                         <input className='form-control abc' type="text" name='balance' value={this.state.balance} onChange={this.handleOnClick} required/>
                     </div>
+                    <br></br>
+                    </div>
                     <div>
-                        <button type='submit' className='btn btn-dark button-align '>Edit</button>
+                        <button type='submit' className='btn btn-dark'>Edit</button>
                     </div>
                 </form>
                 </div>
-                <img className='front0' src={bg} height="80%" width="auto"/>
+                <img className='front0' src={bg} height="auto" width="80%"/>
             </div>
         )
     }

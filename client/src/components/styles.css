@@ -20,8 +20,6 @@ html, body, .App , #root{
 }
 .front0 {
     position: absolute;
-    margin-left: 12%;
-    left: 0;
     bottom: 0px;
     z-index: -1; 
     opacity: 0.65; 
@@ -92,14 +90,11 @@ html, body, .App , #root{
 }
 .abc{
     border-left: none!important;
-    max-width: 40%!important;
-    min-width: 40%!important;
+    max-width: 55%!important;
+    min-width: 45%!important;
 }
 .input-group{
     margin-bottom: 1.8%;
-}
-form{
-    margin-left: 30%;
 }
 .button-align{
     margin-right: 40%!important;
@@ -119,16 +114,19 @@ a{
     margin-left: 5%;
 }
 .div-align{
-    margin-left: 40%;
     display: block;
     text-align: left;
 }
-.original{
-    margin-left: 0!important;
+.center{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.center1{
+    margin-left: 15% !important;
 }
 .tablew{
     width: 38%!important;
-    margin-left: 31%!important; 
     margin-top: 2%!important;
     margin-bottom: 2%!important;
 }
@@ -153,5 +151,12 @@ a{
     margin-left:10px;
     padding:0;
     margin-bottom:0
+}
+.xyx{
+    margin-right: 0!important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content:center !important;
+    align-items:center !important;
 }
 
