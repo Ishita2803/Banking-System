@@ -102,7 +102,7 @@ export class transfer extends Component {
                     <div className="input-group tablew">
                     <label ><th>Enter the amount</th>   </label>&nbsp;&nbsp;&nbsp;
                     <input className='form-control' type="number" name='amount' value={this.state.amount} onChange={this.handleOnClick} min="1" max={this.state.balance1} required/></div>
-                    <div><button className='btn btn-success' id="id" type='submit'>Transfer </button></div>
+                    <div><button className='btn btn-success' id="id" type='submit'>Transfer </button></div><br></br><br></br>
                 </form>
             </div>
         )
